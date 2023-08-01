@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Матроскин</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__top">
+                    <a href="#" class="logo header__logo">
+                        <div class="logo__img">
+                            <img src="img/logo.svg" alt="Logo">
+                        </div>
+                        <div class="logo__text">
+                            Зоомагазин и груминг салон
+                            в Нижневартовске
+                        </div>
+                    </a>
+                    <div class="header__btn">
+                        <button type="button">
+                            Запись на груминг онлайн
+                        </button>
+                    </div>
+                    <div class="header__contacts header-contacts">
+                        <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                        <div class="header__social social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__item-link">
+                                        <img src="img/viber.svg" alt="Viber">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__item-link">
+                                        <img src="img/vk.svg" alt="Vk">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search search">
+                        <input type="text" class="search__input" placeholder="Поиск по каталогу">
+                        <button type="button" class="search__icon"></button>
+                    </div>
+                </div>             
+                <div class="header__bottom header-bottom">
+                    <button class="header-bottom__catalog">
+                        <span>Каталог</span>
+                    </button>
+                    <ul class="header-bottom__list">
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Акции</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Новинки</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Груминг</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Доставка</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Адреса магазинов</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-bottom__actions">
+                        <button class="header-bottom__search search">
+                            <!-- <input type="text" class="search__input" placeholder="Поиск по каталогу"> -->
+                            <div type="button" class="search__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="search__text">Поиск</div>
+                        </button>
+                        <a href="#" class="header-bottom__favorite favorite">
+                            <div class="favorite__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="favorite__text">Избранное</div>
+                        </a>
+                        <a href="#" class="header-bottom__user user">
+                            <div class="user__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="user__text">Войти</div>
+                        </a>
+                        <button class="header-bottom__busket busket">
+                            <div class="busket__icon">
+                                <span class="busket__icon-count">10</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="busket__text">Корзина</div>
+                        </button>
+                    </div>
+                    <!-- <div class="header__actions--mobile actions-mobile">
+                         <div class="actions-mobile__search search">
+                            <button type="button" class="search__btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                        <a href="#" class="actions-mobile__favorite favorite">
+                            <div class="favorite__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="favorite__text">Избранное</div>
+                        </a>
+                        <a href="#" class="actions-mobile__user user">
+                            <div class="user__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="user__text">Войти</div>
+                        </a>
+                        <button class="actions-mobile__busket busket">
+                            <div class="busket__icon">
+                                <span class="busket__icon-count">10</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="busket__text">Корзина</span>
+                        </button>
+                    </div> -->
+                </div>  
+                <div class="header__mobile-menu">
+                    <a href="#" class="logo header__logo">
+                        <div class="logo__img">
+                            <img src="img/logo.svg" alt="Logo">
+                        </div>
+                        <div class="logo__text">
+                            Зоомагазин и груминг салон
+                            в Нижневартовске
+                        </div>
+                    </a>
+                    <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                    <nav class="header__menu menu">
+                        <button type="button" class="menu__icon"></button>
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item has-submenu">
+                                    <button class="menu__submenu-btn submenu-btn">
+                                        <span class="submenu-btn__text">Каталог</span>
+                                        <div class="submenu-btn__icon">
+                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для кошек</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для собак</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для птиц</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для грызунов</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для рыбок</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Акции</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Новинки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Груминг</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Доставка</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Адреса магазинов</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header__contacts header-contacts">
+                                <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                                <div class="header__social social">
+                                    <ul class="social__list">
+                                        <li class="social__item">
+                                            <a href="#" class="social__item-link">
+                                                <img src="img/viber.svg" alt="Viber">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__item-link">
+                                                <img src="img/vk.svg" alt="Vk">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__btn">
+                                <button type="button">
+                                    Запись на груминг онлайн
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>   
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <h1 class="hero__title title">Всё для счастья ваших любимцев</h1>
+                        <p class="hero__desc">Новые скидки каждый день!</p>
+                        <a href="#" class="hero__btn">
+                            <span>В каталог</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.0005H19" stroke="#1951E7" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 5.00049L19 12.0005L12 19.0005" stroke="#1951E7" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="catalog__container container">
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Для собак</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/dog.jpg" alt="Собака">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Для кошек</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/cat.jpg" alt="Кошка">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Для птиц</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/parrot.jpg" alt="Попугай">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Для грызунов</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/hamster.jpg" alt="Хомяк на руках">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Для рыбок</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/fish.jpg" alt="Рыбка">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-link">
+                                <p class="catalog__item-title">Груминг</p>
+                                <div class="catalog__item-img">
+                                    <img src="img/dog-2.jpg" alt="Собака">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="popular-goods">
+                <div class="popular-goods__container container">
+                    <h2 class="popular-goods__title title">Популярные товары</h2>
+                    <div class="tabs-wrapper popular-goods__tabs-wrapper">
+                        <div class="tabs popular-goods__tabs">
+                            <a href="#popular-goods-tab-1" class="tab tab--active popular-goods__tab">Корм</a>
+                            <a href="#popular-goods-tab-2" class="tab popular-goods__tab">Игрушки</a>
+                            <a href="#popular-goods-tab-3" class="tab popular-goods__tab">Лежанки</a>
+                        </div>
+                    </div>
+                    <div class="tabs-container popular-goods__tabs-container">
+                        <div id="popular-goods-tab-1"
+                            class="tabs-content tabs-content--active popular-goods__tabs-content">
+                            <div class="swiper popular-goods__slider">
+                                <div class="swiper-arrows">
+                                    <button class="swiper-arrow swiper-arrow--prev">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.30606 12.5598L1.66406 6.91782L7.30606 1.27649" stroke="#546179"
+                                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="swiper-arrow swiper-arrow--next">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.33203 12.95L6.97403 7.30863L1.33203 1.66663" stroke="#546179"
+                                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide goods-slide">
+                                        <div class="goods-slide__header">
+                                            <div class="goods-slide__notice">
+                                                <span class="goods-slide__discount">-25%</span>
+                                            </div>
+                                            <div class="goods-slide__img">
+                                                <img src="img/food-1.jpg" alt="Корм">
+                                            </div>
+                                            <button class="goods-slide__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide goods-slide">
+                                        <div class="goods-slide__header">
+                                            <div class="goods-slide__notice">
+                                                <span class="goods-slide__discount">-25%</span>
+                                            </div>
+                                            <div class="goods-slide__img">
+                                                <img src="img/food-2.jpg" alt="Корм">
+                                            </div>
+                                            <button class="goods-slide__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio2" id="radio5" checked>
+                                                        <label for="radio5">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio2" id="radio6">
+                                                        <label for="radio6">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio2" id="radio7">
+                                                        <label for="radio7">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio2" id="radio8">
+                                                        <label for="radio8">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide goods-slide">
+                                        <div class="goods-slide__header">
+                                            <div class="goods-slide__notice">
+                                                <span class="goods-slide__discount">-25%</span>
+                                            </div>
+                                            <div class="goods-slide__img">
+                                                <img src="img/food-3.jpg" alt="Корм">
+                                            </div>
+                                            <button class="goods-slide__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio3" id="radio9" checked>
+                                                        <label for="radio9">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio3" id="radio10">
+                                                        <label for="radio10">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio3" id="radio11">
+                                                        <label for="radio11">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio3" id="radio12">
+                                                        <label for="radio12">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide goods-slide">
+                                        <div class="goods-slide__header">
+                                            <div class="goods-slide__notice">
+                                                <span class="goods-slide__discount">-25%</span>
+                                            </div>
+                                            <div class="goods-slide__img">
+                                                <img src="img/food-4.jpg" alt="Корм">
+                                            </div>
+                                            <button class="goods-slide__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio4" id="radio13" checked>
+                                                        <label for="radio13">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio4" id="radio14">
+                                                        <label for="radio14">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio4" id="radio15">
+                                                        <label for="radio15">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio4" id="radio16">
+                                                        <label for="radio16">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide goods-slide">
+                                        <div class="goods-slide__header">
+                                            <div class="goods-slide__notice">
+                                                <span class="goods-slide__discount">-25%</span>
+                                            </div>
+                                            <div class="goods-slide__img">
+                                                <img src="img/food-1.jpg" alt="Корм">
+                                            </div>
+                                            <button class="goods-slide__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio5" id="radio17" checked>
+                                                        <label for="radio17">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio5" id="radio18">
+                                                        <label for="radio18">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio5" id="radio19">
+                                                        <label for="radio19">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio5" id="radio20">
+                                                        <label for="radio20">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popular-goods-tab-2" class="tabs-content popular-goods__tabs-content">
+                            content-2
+                        </div>
+                        <div id="popular-goods-tab-3" class="tabs-content popular-goods__tabs-content">
+                            content-3
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="brands">
+                <div class="brands__container container">
+                    <h2 class="visually-hidden">Бренды</h2>
+                    <div class="brands__wrapper">
+                        <ul class="brands__list">
+                            <li class="brands__item">
+                                <img src="img/brand-1.svg" alt="Purina Pro Plan">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/brand-2.svg" alt="Brit">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/brand-3.svg" alt="Acana">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/brand-4.svg" alt="Royal Canin">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/brand-5.svg" alt="Sheba">
+                            </li>
+                            <li class="brands__item">
+                                <img src="img/brand-6.svg" alt="Grandorf">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="benefits__container container">
+                    <div class="benefits__wrapper">
+                        <div class="benefits__content">
+                            <h2 class="benefits__title title">Теперь ещё удобнее!</h2>
+                            <p class="benefits__desc">
+                                Заказывайте в магазине “Матроскин” не выходя из дома!
+                                Все товары лицензированы и проходят проверку оригинальности.
+                                Заказывайте в магазине “Матроскин” не выходя из дома!
+                            </p>
+                        </div>
+                        <ul class="benefits__list">
+                            <li class="benefits__item benefits__item--wide-choose">
+                                Широкий выбор
+                            </li>
+                            <li class="benefits__item benefits__item--unique">
+                                Уникальность товаров
+                            </li>
+                            <li class="benefits__item benefits__item--fast-delivery">
+                                Быстрая доставка
+                            </li>
+                            <li class="benefits__item benefits__item--discount">
+                                Доступные цены
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="stocks">
+                <div class="stocks__container container">
+                    <div class="stocks__wrapper">
+                        <h2 class="stocks__title title">Акции</h2>
+                        <div class="stocks__slider swiper">
+                            <div class="swiper-arrows">
+                                <button class="swiper-arrow swiper-arrow--prev">
+                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.30606 12.5598L1.66406 6.91782L7.30606 1.27649" stroke="#fff"
+                                            stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="swiper-arrow swiper-arrow--next">
+                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.33203 12.95L6.97403 7.30863L1.33203 1.66663" stroke="#fff"
+                                            stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide goods-slide">
+                                    <div class="goods-slide__header">
+                                        <div class="goods-slide__notice">
+                                            <span class="goods-slide__discount">-25%</span>
+                                        </div>
+                                        <div class="goods-slide__img">
+                                            <img src="img/food-1.jpg" alt="Корм">
+                                        </div>
+                                        <button class="goods-slide__favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                    stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="goods-slide__content">
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide goods-slide">
+                                    <div class="goods-slide__header">
+                                        <div class="goods-slide__notice">
+                                            <span class="goods-slide__discount">-25%</span>
+                                        </div>
+                                        <div class="goods-slide__img">
+                                            <img src="img/food-2.jpg" alt="Корм">
+                                        </div>
+                                        <button class="goods-slide__favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                    stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="goods-slide__content">
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide goods-slide">
+                                    <div class="goods-slide__header">
+                                        <div class="goods-slide__notice">
+                                            <span class="goods-slide__discount">-25%</span>
+                                        </div>
+                                        <div class="goods-slide__img">
+                                            <img src="img/food-3.jpg" alt="Корм">
+                                        </div>
+                                        <button class="goods-slide__favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                    stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="goods-slide__content">
+                                        <div class="goods-slide__body">
+                                            <div class="goods-slide__price">
+                                                <span class="goods-slide__price-new">3 446 ₽</span>
+                                                <span class="goods-slide__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="goods-slide__title">FLORIDA</h3>
+                                            <p class="goods-slide__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="goods-slide__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="goods-slide__bottom">
+                                            <div class="goods-slide__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="goods-slide__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="address">
+                <div class="address__container container">
+                    <div id="map" class="address__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5a4becd46bbd90553fd327a4e555e5433325713c483e9115114e94ef3ca236d&amp;source=constructor" width="658" height="440" frameborder="0"></iframe>
+                    </div>
+                    <div class="address__content">
+                        <h2 class="address__title title">Заходите в гости!</h2>
+                        <p class="address__desc">
+                            Любите ходить по магазинам или хотите оформить самовывоз? Отлично! 
+                            Мы работаем с 9 утра до 9 вечера, наши магазины распологаютс по адресам:
+                        </p>
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <address>Северная улица, 74А</address>
+                            </li>
+                            <li class="address__item">
+                                <address>Омская улица, 12</address>
+                            </li>
+                            <li class="address__item">
+                                <address>Профсоюзная улица, 7</address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="news__container container">
+                    <h2 class="news__title title">Новости и полезные статьи</h2>
+                    <div class="swiper news__slider">
+                        <div class="swiper-arrows">
+                            <button class="swiper-arrow swiper-arrow--prev">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.30606 12.5598L1.66406 6.91782L7.30606 1.27649" stroke="#546179"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-arrow swiper-arrow--next">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.33203 12.95L6.97403 7.30863L1.33203 1.66663" stroke="#546179"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide news-slide">
+                                <a href="#" class="news-slide__link">
+                                    <div class="news-slide__img">
+                                        <img src="img/news-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-slide__content">
+                                        <h3 class="news-slide__title">Не забывайте ухаживать за лапками в морозы</h3>
+                                        <p class="news-slide__desc">
+                                            Перед прогулкой: нанесите защитный воск. 
+                                            После прогулки: вымойте лапки и насухо протрите. 
+                                            Нанесите специальный крем на подушечки
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <a href="#" class="news-slide__link">
+                                    <div class="news-slide__img">
+                                        <img src="img/news-2.jpg" alt="">
+                                    </div>
+                                    <div class="news-slide__content">
+                                        <h3 class="news-slide__title">Знакомство с брендом Wanpy</h3>
+                                        <p class="news-slide__desc">
+                                            Нежное пюре с лососем и тунцом 
+                                            или с треской и тунцом для кошек - ни с чем несравнимое удовольствие для мурлык Лакомство, 
+                                            которое можно каждый день
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <a href="#" class="news-slide__link">
+                                    <div class="news-slide__img">
+                                        <img src="img/news-3.jpg" alt="">
+                                    </div>
+                                    <div class="news-slide__content">
+                                        <h3 class="news-slide__title">Свободные вакансии!</h3>
+                                        <p class="news-slide__desc">
+                                            ПРОДАВЕЦ-КОНСУЛЬТАНТ И ПОМОЩНИК ГРУМЕРАПРОДАВЕЦ-КОНСУЛЬТАНТ:
+                                            Наши требования: * интерес к сфере зоотоваров
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <a href="#" class="news-slide__link">
+                                    <div class="news-slide__img">
+                                        <img src="img/news-4.jpg" alt="">
+                                    </div>
+                                    <div class="news-slide__content">
+                                        <h3 class="news-slide__title">Не забывайте ухаживать за лапками в морозы</h3>
+                                        <p class="news-slide__desc">
+                                            Перед прогулкой: нанесите защитный воск. 
+                                            После прогулки: вымойте лапки и насухо протрите. 
+                                            Нанесите специальный крем на подушечки
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <a href="#" class="news-slide__link">
+                                    <div class="news-slide__img">
+                                        <img src="img/news-1.jpg" alt="">
+                                    </div>
+                                    <div class="news-slide__content">
+                                        <h3 class="news-slide__title">Не забывайте ухаживать за лапками в морозы</h3>
+                                        <p class="news-slide__desc">
+                                            Перед прогулкой: нанесите защитный воск. 
+                                            После прогулки: вымойте лапки и насухо протрите. 
+                                            Нанесите специальный крем на подушечки
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="registration">
+                <div class="registration__container container">
+                    <div class="registration__content">
+                        <h2 class="registration__title title">Записывемся на ноготочки!</h2>
+                        <p class="registration__desc">
+                            Полный комплекс процедур для красоты и здоровья вашего питомца
+                        </p>
+                        <form action="#" class="registration__form">
+                            <input type="tel" class="registration__input" name="phone" placeholder="+7 ___ ___-__-__">
+                            <button type="button" class="registration__btn">Записаться на груминг</button>
+                        </form>
+                    </div>
+                </div>
+            </section> -->
+            <section class="registration">
+                <div class="registration__container container">
+                    <div class="registration__inner">
+                        <div class="registration__content">
+                            <h2 class="registration__title title">Записывемся на ноготочки!</h2>
+                            <p class="registration__desc">
+                                Полный комплекс процедур для красоты и здоровья вашего питомца
+                            </p>
+                            <form action="#" class="registration__form">
+                                <input type="tel" class="registration__input" name="phone" placeholder="+7 ___ ___-__-__">
+                                <button type="button" class="registration__btn">Записаться на груминг</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__top">
+                    <div class="footer__logo">
+                        <a href="#" class="footer__logo-img">
+                            <img src="img/logo-footer.svg" alt="Матроскин">
+                        </a>
+                        <p class="footer__logo-desc">
+                            Товары для животных и груминг салон в Нижневартовске, бесплатная доставка при покупке от 2000₽
+                        </p>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu-inner">
+                            <h3 class="footer__menu-title">Категории</h3>
+                            <ul class="footer__menu-list">                       
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для собак</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для кошек</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для птиц</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для грызунов</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для рыбок</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-inner">
+                            <h3 class="footer__menu-title">Покупателям</h3>
+                            <ul class="footer__menu-list">                       
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Акции</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Новинки</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Груминг</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Контакты</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Доставка</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Адреса магазинов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__contacts-title">Контакты</h3>
+                        <div class="footer__contacts-inner">
+                            <div class="footer__contacts-wrapper">
+                                <p class="footer__contacts-number">+7 (982) 537-81-27</p>
+                                <div class="footer__contacts-social contacts-social">
+                                    <ul class="contacts-social__list">
+                                        <li class="contacts-social__item">
+                                            <a href="#" class="contacts-social__link">
+                                                <img src="img/viber.svg" alt="Viber">                                        
+                                            </a>
+                                        </li>
+                                        <li class="contacts-social__item">
+                                            <a href="#" class="contacts-social__link">
+                                                <img src="img/vk.svg" alt="Vk">                                                                                     
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="footer__contacts-btn">Запись онлайн</button>
+                            </div>
+                            <div class="footer__address footer-address">
+                                <ul class="footer-address__list">
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="footer__bottom">
+                    <div class="footer__inner">
+                        <a href="#" class="footer__developer">
+                            <img src="img/readycode-logo.svg" alt="">
+                        </a>
+                        <p class="footer__copyright">
+                            © ООО «Матроскин»
+                        </p>
+                    </div>
+                    <div class="footer__payment">
+                        <ul class="footer__payment-list">
+                            <li class="footer__payment-item">
+                                <img src="img/google-pay.svg" alt="Google Pay">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/maestro.svg" alt="Maestro">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/master-card.svg" alt="Master Card">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/paypal.svg" alt="PayPal">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/yandex.svg" alt="Яндекс Кошелёк">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/mir.svg" alt="Мир">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/qiwi.svg" alt="Киви кошелек">
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="footer__privacy-policy">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup popup-имя-блока">
+            <div class="popup__area"></div>
+                <div class="popup__inner">
+                    <button class="close-popup"></button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
