@@ -77,6 +77,21 @@ body {
     font-family: "RF Tone";
 }
 
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.site-wrapper.light {
+    background-color: #f4f6fb;
+}
+
+main {
+    flex: 1 1 auto;
+    background-color: #f4f6fb;
+}
+
 section {
     margin-bottom: 110px;
 }
@@ -96,6 +111,11 @@ section {
 .header {
     background-color: #91aff5;
     padding-top: 25px;
+}
+
+.site-wrapper.light,
+.site-wrapper.light .header {
+    background-color: #f4f6fb;
 }
 
 .header__top {
@@ -199,9 +219,9 @@ section {
     order: 1;
     width: 24px;
     height: 24px;
-    background: url('../img/search.svg') no-repeat;
     flex-shrink: 0;
     margin-right: 15px;
+    background-color: transparent;
 }
 
 .header-bottom {
@@ -276,7 +296,6 @@ section {
     transition: .3s;
 }
 
-.search:hover path,
 .favorite:hover path,
 .user:hover path,
 .busket:hover path {
@@ -1334,33 +1353,259 @@ section {
     text-decoration: underline;
 }
 
-.popup {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.8);
-    display: none;
-    z-index: 50;
+.products__container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.popup__area {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.checkbox input {
+  display: none;
 }
 
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.checkbox label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  color: #353535;
+  cursor: pointer;
+}
+
+.checkbox label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #dce0eb;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.checkbox input:checked + label::before {
+    background: url("../img/check.svg") no-repeat center;
+    background-color: #1951e7;
+    border-color: #1951e7;
+}
+
+.products__filter {
+    width: 255px;
+}
+
+.filter-item {
+    border-bottom: 1px solid #dce0eb;
+    padding: 20px 0;
+}
+
+.filter-item:first-child {
+    padding-top: 0;
+}
+
+.filter-item__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+
+.filter-item.open .filter-item__content {
+    opacity: 1;
+    overflow: visible;
+}
+
+.filter-item__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #878ea0;
+    margin-bottom: 12px;
     cursor: pointer;
-    width: 28px;
-    height: 28px;
-    background: url('../img/close-popup.svg') no-repeat;
-    background-color: transparent;
 }
+
+.filter-item__title-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-item__search {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.filter-item__search-icon {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.filter-item__search-input {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 6px;
+    border: 1px solid #dce0eb;
+    background-color:#fff;
+    padding: 12px 61px 12px 44px;
+}
+
+.filter-item__search-input::placeholder {
+    color: #878ea0;
+}
+
+.filter-item__brands .checkbox:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.filter-item__range-slider {
+    margin-bottom: 25px;
+}
+
+.noUi-connects {
+	background-color: #1951e7;
+}
+
+.noUi-target {
+	background-color: #bfbfbf;
+	border: none;
+	border-radius: 100px;
+	box-shadow: none;
+	height: 2px;
+    margin-top: 22px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+	display: none;
+}
+
+.noUi-handle {
+	box-shadow: none;
+	border-radius: 100%;
+	background-color: #fff;
+	border: 2px solid #5d71dd;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 20px;
+	height: 20px;
+	top: -10px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+	right: 0;
+}
+
+/* Убираем стрелки */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.range-slider__values {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.range-slider__value {
+    font-size: 18px;
+    border: 1px solid #adB8d4;
+    border-radius: 6px;
+    padding: 12px 20px 9px;
+    text-align: center;
+}
+
+.range-slider__value::placeholder {
+    color: #adB8d4;
+}
+
+.range-slider__values-separator {
+    width: 10px;
+    height: 2px;
+    background-color: #adB8d4;
+}
+
+.products__filter-search-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #1951e7;
+    color: #fff;
+    border-radius: 71px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.products__filter-search-btn::before {
+    content: '';
+    background: url('../img/search-sm.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.products__filter-reset-btn {
+    width: 100%;
+    border: 1px solid #dce0eb;
+    border-radius: 71px;
+    background-color: transparent;
+    color: #878ea0;
+    padding: 13px;
+}
+
+.products__breadcrumbs {
+    margin-bottom: 20px
+}
+
+.breadcrumbs__list {
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumbs__item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #878ea0;
+}
+
+.breadcrumbs__item::after {
+    content: "";
+    background-color: #c1c6d4;
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-radius: 50px;
+}
+
+.breadcrumbs__item:last-child::after {
+    display: none;
+}
+
+.breadcrumbs__link {
+    margin-right: 10px;
+    display: block;
+    color: inherit;
+    transition: color .3s;
+}
+
+.breadcrumbs__link:hover {
+    color: #555;
+}
+
+.breadcrumbs__item:last-child {
+    color: #1951e7;
+}
+
 
 @media (max-width: 1200px) {
     .header__search {
@@ -1510,6 +1755,10 @@ section {
         height: 35px;
         margin: 0;
         padding: 0;
+    }
+
+    .search:hover path {
+        color: #1951e7;
     }
 
     .header__mobile-menu {

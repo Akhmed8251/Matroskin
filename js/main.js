@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.querySelector(".menu__icon")
     const menu = document.querySelector(".menu")
     menuIcon.addEventListener("click", () => {
@@ -189,10 +189,4 @@ document.addEventListener("DOMContentLoaded", function() {
           mask: '+7 000 000-00-00'
         }
     )
-
-    const popup = document.querySelector(".popup")
-    const registerToGrumming = document.querySelector(".header__btn button") 
-    registerToGrumming.addEventListener("click", () => {
-        popup.classList.add("open")
-    })
 })

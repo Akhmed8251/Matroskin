@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+        integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/products.css">
+    <title>Матроскин</title>
+</head>
+
+<body>
+    <div class="site-wrapper light">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__top">
+                    <a href="#" class="logo header__logo">
+                        <div class="logo__img">
+                            <img src="img/logo-products.svg" alt="Logo">
+                        </div>
+                        <div class="logo__text">
+                            Зоомагазин и груминг салон
+                            в Нижневартовске
+                        </div>
+                    </a>
+                    <div class="header__btn">
+                        <button type="button">
+                            Запись на груминг онлайн
+                        </button>
+                    </div>
+                    <div class="header__contacts header-contacts">
+                        <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                        <div class="header__social social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__item-link">
+                                        <img src="img/viber-blue.svg" alt="Viber">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__item-link">
+                                        <img src="img/vk-blue.svg" alt="Vk">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search search">
+                        <input type="text" class="search__input" placeholder="Поиск по каталогу">
+                        <button type="button" class="search__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                    stroke="#1951e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#1951e7" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__bottom header-bottom">
+                    <button class="header-bottom__catalog">
+                        <span>Каталог</span>
+                    </button>
+                    <ul class="header-bottom__list">
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Акции</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Новинки</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Груминг</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Доставка</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Адреса магазинов</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a href="#" class="header-bottom__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-bottom__actions">
+                        <button class="header-bottom__search search">
+                            <!-- <input type="text" class="search__input" placeholder="Поиск по каталогу"> -->
+                            <div type="button" class="search__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#292929" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="search__text">Поиск</div>
+                        </button>
+                        <a href="#" class="header-bottom__favorite favorite">
+                            <div class="favorite__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="favorite__text">Избранное</div>
+                        </a>
+                        <a href="#" class="header-bottom__user user">
+                            <div class="user__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="user__text">Войти</div>
+                        </a>
+                        <button class="header-bottom__busket busket">
+                            <div class="busket__icon">
+                                <span class="busket__icon-count">10</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="busket__text">Корзина</div>
+                        </button>
+                    </div>
+                    <!-- <div class="header__actions--mobile actions-mobile">
+                         <div class="actions-mobile__search search">
+                            <button type="button" class="search__btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                        <a href="#" class="actions-mobile__favorite favorite">
+                            <div class="favorite__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="favorite__text">Избранное</div>
+                        </a>
+                        <a href="#" class="actions-mobile__user user">
+                            <div class="user__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="user__text">Войти</div>
+                        </a>
+                        <button class="actions-mobile__busket busket">
+                            <div class="busket__icon">
+                                <span class="busket__icon-count">10</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="busket__text">Корзина</span>
+                        </button>
+                    </div> -->
+                </div>
+                <div class="header__mobile-menu">
+                    <a href="#" class="logo header__logo">
+                        <div class="logo__img">
+                            <img src="img/logo.svg" alt="Logo">
+                        </div>
+                        <div class="logo__text">
+                            Зоомагазин и груминг салон
+                            в Нижневартовске
+                        </div>
+                    </a>
+                    <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                    <nav class="header__menu menu">
+                        <button type="button" class="menu__icon"></button>
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item has-submenu">
+                                    <button class="menu__submenu-btn submenu-btn">
+                                        <span class="submenu-btn__text">Каталог</span>
+                                        <div class="submenu-btn__icon">
+                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="white" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для кошек</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для собак</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для птиц</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для грызунов</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__link">Для рыбок</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Акции</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Новинки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Груминг</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Доставка</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Адреса магазинов</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header__contacts header-contacts">
+                                <p class="header-contacts__tel">+7 (982) 537-81-27</p>
+                                <div class="header__social social">
+                                    <ul class="social__list">
+                                        <li class="social__item">
+                                            <a href="#" class="social__item-link">
+                                                <img src="img/viber.svg" alt="Viber">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__item-link">
+                                                <img src="img/vk.svg" alt="Vk">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__btn">
+                                <button type="button">
+                                    Запись на груминг онлайн
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="products">
+                <div class="products__container container">
+                    <aside class="products__filter">
+                        <div class="products__filter-header">
+                            <h3 class="products__filter-title title">Настройка поиска</h3>
+                            <div class="products__show-count show-count">
+                                <span class="show-count__text">Показывать по:</span>
+                                <ul class="show-count__list">
+                                    <li class="show-count__item">
+                                        <button>9</button>
+                                    </li>
+                                    <li class="show-count__item">
+                                        <button>12</button>
+                                    </li>
+                                    <li class="show-count__item">
+                                        <button>18</button>
+                                    </li>
+                                    <li class="show-count__item">
+                                        <button>24</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__view view">
+                                <span class="view__text">Вид:</span>
+                                <ul class="view__list">
+                                    <li class="view__item" data-view="one-columns">
+                                        <button class="view__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                viewBox="0 0 19 19" fill="none">
+                                                <rect x="0.394531" y="2.375" width="3.2132" height="3.28845" rx="1"
+                                                    fill="#B3B6C9" />
+                                                <rect x="4.67969" y="2.375" width="13.9238" height="3.28845" rx="1"
+                                                    fill="#B3B6C9" />
+                                                <rect x="0.394531" y="7.85547" width="3.2132" height="3.28845"
+                                                    rx="1" fill="#B3B6C9" />
+                                                <rect x="4.67969" y="7.85547" width="13.9238" height="3.28845"
+                                                    rx="1" fill="#B3B6C9" />
+                                                <rect x="0.394531" y="13.3367" width="3.2132" height="3.28845"
+                                                    rx="1" fill="#B3B6C9" />
+                                                <rect x="4.67969" y="13.3364" width="13.9238" height="3.28845"
+                                                    rx="1" fill="#B3B6C9" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="view__item" data-view="two-columns">
+                                        <button class="view__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                viewBox="0 0 19 19" fill="none">
+                                                <g clip-path="url(#clip0_144_9420)">
+                                                    <rect x="0.949219" y="0.949951" width="7.48125" height="7.48125"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="10.5684" y="0.949951" width="7.48125" height="7.48125"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="10.5684" y="10.355" width="7.48125" height="7.48125"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="0.949219" y="10.5686" width="7.48125" height="7.48125"
+                                                        rx="1" fill="#B3B6C9" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_144_9420">
+                                                        <rect width="19" height="19" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="view__item active" data-view="three-columns">
+                                        <button class="view__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                viewBox="0 0 19 19" fill="none">
+                                                <g clip-path="url(#clip0_144_9426)">
+                                                    <rect x="0.765625" y="0.935547" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="7.02539" y="0.935547" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="13.2852" y="0.935547" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="7.02539" y="6.95215" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="7.02539" y="13.113" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="13.2852" y="6.95215" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="13.2852" y="13.113" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="0.765625" y="7.09644" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="0.765625" y="13.113" width="4.95152" height="4.95152"
+                                                        rx="1" fill="#B3B6C9" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_144_9426">
+                                                        <rect width="19" height="19" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form class="products__filter-form">
+                            <div class="products__filter-item filter-item">
+                                <div class="filter-item__title">
+                                    <span class="filter-item__title-text">Бренд</span>
+                                    <div class="filter-item__title-icon">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1.00024L5 5.00024L9 1.00024" stroke="#1951E7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__search">
+                                        <input type="text" class="filter-item__search-input"
+                                            placeholder="Поиск по брендам">
+                                        <div class="filter-item__search-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                    stroke="#1951E7" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#1951E7"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item__brands">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-1">
+                                            <label for="checkbox-1">Brit</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-2">
+                                            <label for="checkbox-2">ProPlan</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-3">
+                                            <label for="checkbox-3">Advance</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-4">
+                                            <label for="checkbox-4">Farmina</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-5">
+                                            <label for="checkbox-5">Royal Canin</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-6">
+                                            <label for="checkbox-6">Happy</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__filter-item filter-item">
+                                <div class="filter-item__title">
+                                    <span class="filter-item__title-text">Ценовой диапазон</span>
+                                    <div class="filter-item__title-icon">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1.00024L5 5.00024L9 1.00024" stroke="#1951E7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__range-slider range-slider" id="range-slider"></div>
+                                    <div class="range-slider__values">
+                                        <input type="number" min="0" max="1000" value="100" placeholder="0" id="input-0"
+                                            class="range-slider__value range-slider__value-min">
+                                        <span class="range-slider__values-separator"></span>
+                                        <input type="number" min="0" max="1000" value="500" placeholder="1000"
+                                            id="input-1" class="range-slider__value range-slider__value-max">
+                                        <span class="range-slider__values-currency">₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__filter-item filter-item">
+                                <div class="filter-item__title">
+                                    <span class="filter-item__title-text">Вкус</span>
+                                    <div class="filter-item__title-icon">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1.00024L5 5.00024L9 1.00024" stroke="#1951E7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__brands">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-7">
+                                            <label for="checkbox-7">Курица</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-8">
+                                            <label for="checkbox-8">Индейка</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-9">
+                                            <label for="checkbox-9">Рыба</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-10">
+                                            <label for="checkbox-10">Говядина</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-11">
+                                            <label for="checkbox-11">Свинина</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox-12">
+                                            <label for="checkbox-12">Злаки</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="products__filter-search-btn">Искать</button>
+                            <button type="reset" class="products__filter-reset-btn">Сбросить фильтр</button>
+                        </form>
+                    </aside>
+                    <div class="products__inner">
+                        <div class="products__breadcrumbs breadcrumbs">
+                            <div class="breadcrumbs__inner">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="#" class="breadcrumbs__link">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a href="#" class="breadcrumbs__link">Для кошек</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        Корм
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="products__delivery products-delivery">
+                            <div class="products-delivery__content">
+                                <h2 class="products-delivery__title title">Бесплатная доставка при заказе от 2000₽</h2>
+                                <p class="products-delivery__desc">При заказе до 2000₽, доставка 150₽.</p>
+                            </div>
+                        </div>
+                        <div class="products__subcategory">
+                            <ul class="products__subcategory-list">
+                                <li class="products__subcategory-item">
+                                    <button type="button" class="products__subcategory-btn">Сухой корм</button>
+                                </li>
+                                <li class="products__subcategory-item">
+                                    <button type="button" class="products__subcategory-btn">Консервы</button> 
+                                </li>
+                                <li class="products__subcategory-item">
+                                    <button type="button" class="products__subcategory-btn">Пресервы</button>
+                                </li>
+                                <li class="products__subcategory-item">
+                                    <button type="button" class="products__subcategory-btn">Лакомства</button>           
+                                </li>
+                                <li class="products__subcategory-item">
+                                    <button type="button" class="products__subcategory-btn">Витамины и добавки</button>   
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__catalog">
+                            <div class="products__title-wrapper">
+                                <h2 class="products__title title">Корм</h2>
+                            </div>
+                            <div class="products__wrapper">
+                                <span data-da=".products__title-wrapper, 768, last" class="products__count">203 товара</span>
+                                <div class="products__filter-mobile-btn">
+                                    Фильтр
+                                </div>
+                                <div class="products__show-count show-count" data-da=".products__filter-header, 768, last">
+                                    <span class="show-count__text">Показывать по:</span>
+                                    <ul class="show-count__list">
+                                        <li class="show-count__item">
+                                            <button>9</button>
+                                        </li>
+                                        <li class="show-count__item">
+                                            <button>12</button>
+                                        </li>
+                                        <li class="show-count__item">
+                                            <button>18</button>
+                                        </li>
+                                        <li class="show-count__item">
+                                            <button>24</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__view view" data-da=".products__filter-header, 768, last">
+                                    <span class="view__text">Вид:</span>
+                                    <ul class="view__list">
+                                        <li class="view__item" data-view="one-columns">
+                                            <button class="view__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                    viewBox="0 0 19 19" fill="none">
+                                                    <rect x="0.394531" y="2.375" width="3.2132" height="3.28845" rx="1"
+                                                        fill="#B3B6C9" />
+                                                    <rect x="4.67969" y="2.375" width="13.9238" height="3.28845" rx="1"
+                                                        fill="#B3B6C9" />
+                                                    <rect x="0.394531" y="7.85547" width="3.2132" height="3.28845"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="4.67969" y="7.85547" width="13.9238" height="3.28845"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="0.394531" y="13.3367" width="3.2132" height="3.28845"
+                                                        rx="1" fill="#B3B6C9" />
+                                                    <rect x="4.67969" y="13.3364" width="13.9238" height="3.28845"
+                                                        rx="1" fill="#B3B6C9" />
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="view__item" data-view="two-columns">
+                                            <button class="view__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                    viewBox="0 0 19 19" fill="none">
+                                                    <g clip-path="url(#clip0_144_9420)">
+                                                        <rect x="0.949219" y="0.949951" width="7.48125" height="7.48125"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="10.5684" y="0.949951" width="7.48125" height="7.48125"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="10.5684" y="10.355" width="7.48125" height="7.48125"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="0.949219" y="10.5686" width="7.48125" height="7.48125"
+                                                            rx="1" fill="#B3B6C9" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_144_9420">
+                                                            <rect width="19" height="19" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="view__item active" data-view="three-columns">
+                                            <button class="view__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                    viewBox="0 0 19 19" fill="none">
+                                                    <g clip-path="url(#clip0_144_9426)">
+                                                        <rect x="0.765625" y="0.935547" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="7.02539" y="0.935547" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="13.2852" y="0.935547" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="7.02539" y="6.95215" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="7.02539" y="13.113" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="13.2852" y="6.95215" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="13.2852" y="13.113" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="0.765625" y="7.09644" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                        <rect x="0.765625" y="13.113" width="4.95152" height="4.95152"
+                                                            rx="1" fill="#B3B6C9" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_144_9426">
+                                                            <rect width="19" height="19" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__sort">
+                                    <div class="select">
+                                        <div class="select__btn">
+                                            <span class="select__text">Сортировка по</span>
+                                        </div>
+                                        <ul class="select__options">
+                                            <li class="select__option">
+                                                <span class="select__option-text">По популярности</span>
+                                            </li>
+                                            <li class="select__option">
+                                                <span class="select__option-text">Дороже</span>
+                                            </li>
+                                            <li class="select__option">
+                                                <span class="select__option-text">Дешевле</span>
+                                            </li>
+                                            <li class="select__option">
+                                                <span class="select__option-text">По рейтингу</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__catalog-inner">
+                                <ul class="products__catalog-list three-columns">
+                                    <li class="products__catalog-item good">
+                                        <div class="good__header">
+                                            <div class="good__notice">
+                                                <span class="good__discount">-25%</span>
+                                            </div>
+                                            <div class="good__img">
+                                                <img src="img/food-1.jpg" alt="Корм">
+                                            </div>
+                                            <button class="good__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="good__body">
+                                            <div class="good__price">
+                                                <span class="good__price-new">3 446 ₽</span>
+                                                <span class="good__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="good__title">FLORIDA</h3>
+                                            <p class="good__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="good__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="good__bottom">
+                                            <div class="good__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="good__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="products__catalog-item good">
+                                        <div class="good__header">
+                                            <div class="good__notice">
+                                                <span class="good__discount">-25%</span>
+                                            </div>
+                                            <div class="good__img">
+                                                <img src="img/food-1.jpg" alt="Корм">
+                                            </div>
+                                            <button class="good__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="good__body">
+                                            <div class="good__price">
+                                                <span class="good__price-new">3 446 ₽</span>
+                                                <span class="good__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="good__title">FLORIDA</h3>
+                                            <p class="good__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="good__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="good__bottom">
+                                            <div class="good__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="good__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="products__catalog-item good">
+                                        <div class="good__header">
+                                            <div class="good__notice">
+                                                <span class="good__discount">-25%</span>
+                                            </div>
+                                            <div class="good__img">
+                                                <img src="img/food-1.jpg" alt="Корм">
+                                            </div>
+                                            <button class="good__favorite">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
+                                                        stroke="#292929" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="good__body">
+                                            <div class="good__price">
+                                                <span class="good__price-new">3 446 ₽</span>
+                                                <span class="good__price-old">
+                                                    <s>8 699 ₽</s>
+                                                </span>
+                                            </div>
+                                            <h3 class="good__title">FLORIDA</h3>
+                                            <p class="good__desc">
+                                                Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой
+                                            </p>
+                                            <div class="good__weights radio">
+                                                <ul class="radio__list">
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio1" checked>
+                                                        <label for="radio1">
+                                                            400г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio2">
+                                                        <label for="radio2">
+                                                            800г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio3">
+                                                        <label for="radio3">
+                                                            1200г
+                                                        </label>
+                                                    </li>
+                                                    <li class="radio__item">
+                                                        <input type="radio" name="radio1" id="radio4">
+                                                        <label for="radio4">
+                                                            3500г
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="good__bottom">
+                                            <div class="good__counter counter">
+                                                <button class="counter__substract">
+                                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 0.999878H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__count">1</div>
+                                                <button class="counter__add">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5 0.999878V8.99988" stroke="#B3B6C9"
+                                                            stroke-width="1.2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1 4.99988H9" stroke="#B3B6C9" stroke-width="1.2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="good__btn">
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__top">
+                    <div class="footer__logo">
+                        <a href="#" class="footer__logo-img">
+                            <img src="img/logo-footer.svg" alt="Матроскин">
+                        </a>
+                        <p class="footer__logo-desc">
+                            Товары для животных и груминг салон в Нижневартовске, бесплатная доставка при покупке от
+                            2000₽
+                        </p>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu-inner">
+                            <h3 class="footer__menu-title">Категории</h3>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для собак</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для кошек</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для птиц</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для грызунов</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Для рыбок</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-inner">
+                            <h3 class="footer__menu-title">Покупателям</h3>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Акции</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Новинки</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Груминг</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Контакты</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Доставка</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Адреса магазинов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__contacts-title">Контакты</h3>
+                        <div class="footer__contacts-inner">
+                            <div class="footer__contacts-wrapper">
+                                <p class="footer__contacts-number">+7 (982) 537-81-27</p>
+                                <div class="footer__contacts-social contacts-social">
+                                    <ul class="contacts-social__list">
+                                        <li class="contacts-social__item">
+                                            <a href="#" class="contacts-social__link">
+                                                <img src="img/viber.svg" alt="Viber">
+                                            </a>
+                                        </li>
+                                        <li class="contacts-social__item">
+                                            <a href="#" class="contacts-social__link">
+                                                <img src="img/vk.svg" alt="Vk">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="footer__contacts-btn">Запись онлайн</button>
+                            </div>
+                            <div class="footer__address footer-address">
+                                <ul class="footer-address__list">
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="footer-address__item">
+                                        <div class="footer-address__item-address">
+                                            <address>Северная улица, 74А</address>
+                                        </div>
+                                        <div class="footer-address__item-time">
+                                            <time>9:00 - 21:00</time>
+                                        </div>
+                                        <div class="footer-address__item-phone">
+                                            <p>27-85-27</p>
+                                            <a href="#">
+                                                <img src="img/viber-sm.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__inner">
+                        <a href="#" class="footer__developer">
+                            <img src="img/readycode-logo.svg" alt="">
+                        </a>
+                        <p class="footer__copyright">
+                            © ООО «Матроскин»
+                        </p>
+                    </div>
+                    <div class="footer__payment">
+                        <ul class="footer__payment-list">
+                            <li class="footer__payment-item">
+                                <img src="img/google-pay.svg" alt="Google Pay">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/maestro.svg" alt="Maestro">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/master-card.svg" alt="Master Card">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/paypal.svg" alt="PayPal">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/yandex.svg" alt="Яндекс Кошелёк">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/mir.svg" alt="Мир">
+                            </li>
+                            <li class="footer__payment-item">
+                                <img src="img/qiwi.svg" alt="Киви кошелек">
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="footer__privacy-policy">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"
+        integrity="sha512-UOJe4paV6hYWBnS0c9GnIRH8PLm2nFK22uhfAvsTIqd3uwnWsVri1OPn5fJYdLtGY3wB11LGHJ4yPU1WFJeBYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/dynamicAdapt.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
