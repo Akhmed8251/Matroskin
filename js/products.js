@@ -351,9 +351,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `);
     }
-    productsMore.classList.add("hold");
     getProducts(showViewCount, skip);
-    productsMore.classList.remove("hold");
   });
 
   const PRODUCT_SHOW_COUNT = document.querySelector(".show-count__item.active").textContent;
