@@ -1,0 +1,209 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 2,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 3,
+            "image_url": "food-1.jpg",
+            "labels": [],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 4,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 5,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 6,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 7,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 8,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 9,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 10,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 11,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 12,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 13,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        },
+        {
+            "id": 14,
+            "image_url": "food-1.jpg",
+            "labels": [
+                {
+                    "type": "discount",
+                    "value": "-25%"
+                }
+            ],
+            "price": "3 446 ₽",
+            "priceOld": "8 699 ₽",
+            "title": "FLORIDA",
+            "text": "Корм сухой корм для взрослых стерилизованных кошек с лососем и черникой",
+            "weights": [400, 800, 1200, 3500]
+        }
+    ]
+}
