@@ -1143,8 +1143,9 @@
             </section>
             <section class="address">
                 <div class="address__container container">
-                    <div id="map" class="address__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5a4becd46bbd90553fd327a4e555e5433325713c483e9115114e94ef3ca236d&amp;source=constructor" width="658" height="440" frameborder="0"></iframe>
+                    <div id="map" class="address__map" style="width: 658px; height: 440px; position: relative; z-index: 9;">
+                        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5a4becd46bbd90553fd327a4e555e5433325713c483e9115114e94ef3ca236d&amp;source=constructor" width="658" height="440" frameborder="0"></iframe>
+                    </div> -->
                     </div>
                     <div class="address__content">
                         <h2 class="address__title title">Заходите в гости!</h2>
@@ -1465,6 +1466,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

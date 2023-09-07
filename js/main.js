@@ -131,35 +131,40 @@ document.addEventListener("DOMContentLoaded", () => {
     //     // Добавляем слой для отображения схематической карты
     //     map.addChild(new ymaps3.YMapDefaultSchemeLayer());
     // }
-    // ymaps.ready(function () {
-    //     var myMap = new ymaps.Map('map', {
-    //             center: [60.9391, 76.5926],
-    //             zoom: 13
-    //         }, {
-    //             searchControlProvider: 'yandex#search'
-    //         })
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [60.9391, 76.5926],
+                zoom: 13
+            }, {
+                searchControlProvider: 'yandex#search'
+            })
     
-    //         myPlacemarkOmsk = new ymaps.Placemark([60.937557, 76.563295], {
-    //             iconLayout: "default#image",
-    //             iconImageHref: "../img/placemark.svg",
-    //             iconImageSize: [36, 44],
-    //             iconImageOffset: [0, 0]
-    //         })
+            let myPlacemarkOmsk = new ymaps.Placemark([60.937557, 76.563295], {
+                iconLayout: "default#image",
+                iconImageHref: "../img/placemark.svg",
+                iconImageSize: [36, 44],
+                iconImageOffset: [0, 0]
+            })
     
-    //         myPlacemarkSouz = new ymaps.Placemark([60.936617, 76.622736])
+            let myPlacemarkSouz = new ymaps.Placemark([60.936617, 76.622736], {
+                iconLayout: "default#image",
+                iconImageHref: "../img/placemark.svg",
+                iconImageSize: [36, 44],
+                iconImageOffset: [0, 0]
+            })
 
-    //         myPlacemarkNorthStreet = new ymaps.Placemark([60.949609, 76.610187])
+            let myPlacemarkNorthStreet = new ymaps.Placemark([60.949609, 76.610187], {
+                iconLayout: "default#image",
+                iconImageHref: "../img/placemark.svg",
+                iconImageSize: [36, 44],
+                iconImageOffset: [0, 0]
+            })
     
-    //     myMap.geoObjects
-    //         .add(myPlacemarkOmsk)
-    //         .add(myPlacemarkSouz)
-    //         .add(myPlacemarkNorthStreet);
-    // });
-    // const mapPlacemarkers = document.querySelectorAll(".map-circle-placemark__placemark")
-    // mapPlacemarkers.forEach(placemarker => {
-    //     console.log(placemarker)
-    //     placemarker.innerHTML = '<img src="../img/placemark.svg" alt="" />'
-    // })
+        myMap.geoObjects
+            .add(myPlacemarkOmsk)
+            .add(myPlacemarkSouz)
+            .add(myPlacemarkNorthStreet);
+    });
 
     const newsSlider = new Swiper(".news__slider", {     
         spaceBetween: 20,

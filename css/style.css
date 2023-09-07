@@ -923,13 +923,13 @@ section {
 .address__container {
     position: relative;
 }
-
+/* 
 .address__map {
     max-width: 658px;
     height: 440px;
     border-radius: 20px;
     overflow: hidden;
-}
+} */
 
 .address__map::before {
     content: '';
@@ -938,8 +938,9 @@ section {
     height: 96px;
     display: block;
     position: absolute;
+    z-index: 10;
     top: -14px;
-    left: 0;
+    left: -19px;
 }
 
 .ymaps-2-1-79-svg-icon {
@@ -2108,10 +2109,10 @@ input[type="number"]::-webkit-inner-spin-button {
     .stocks__slider .goods-slide__counter {
         display: none;
     }
-
+/* 
     .address__map {
         height: 360px;
-    }
+    } */
 
     .address__map::before {
         width: 147px;
@@ -2252,9 +2253,9 @@ input[type="number"]::-webkit-inner-spin-button {
         gap: 15px;
     }
 
-    .address__map {
+    /* .address__map {
         height: 316px;
-    }
+    } */
 
     .address__title {
         text-align: left;
